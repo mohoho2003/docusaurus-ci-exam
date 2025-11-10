@@ -31,11 +31,11 @@ jobs:
       - name: Create version.txt
         working-directory: ./my-website
         run: |
-          echo "Version: 1.0.${{ github.run_number }}" > dist/version.txt
-          echo "Date: $(date)" >> dist/version.txt
-          echo "Commit: ${{ github.sha }}" >> dist/version.txt
+          echo "Version: 1.0.${{ github.run_number }}" > build/version.txt
+          echo "Date: $(date)" >> build/version.txt
+          echo "Commit: ${{ github.sha }}" >> build/version.txt
           echo "" >> dist/version.txt
-          echo "Made by me" >> dist/version.txt
+          echo "Made by me" >> build/version.txt
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
