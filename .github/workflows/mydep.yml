@@ -34,7 +34,7 @@ jobs:
           echo "Version: 1.0.${{ github.run_number }}" > build/version.txt
           echo "Date: $(date)" >> build/version.txt
           echo "Commit: ${{ github.sha }}" >> build/version.txt
-          echo "" >> dist/version.txt
+          echo "" >> build/version.txt
           echo "Made by me" >> build/version.txt
 
       - name: Deploy to GitHub Pages
