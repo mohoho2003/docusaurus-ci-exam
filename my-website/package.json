@@ -1,6 +1,7 @@
 {
   "name": "my-website",
   "version": "0.0.0",
+  "author": "Made by me",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
